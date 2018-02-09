@@ -20,7 +20,7 @@ namespace SharpFrame.Pages
 
         public void TestRequest()
         {
-            driver.FindElement(searchFld).SendKeys("new test request");
+            WriteText(searchFld, "new test request");
             driver.FindElement(findBtn).SendKeys(Keys.Enter);
             ClearFld(searchFld);
             WriteText(searchFld, "Text from the base class");

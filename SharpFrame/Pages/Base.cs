@@ -26,5 +26,10 @@ namespace SharpFrame.Pages
         {
             driver.FindElement(element).Clear();
         }
+
+        public void Click(By element)
+        {
+            driver.FindElement(element).Click();
+        }
     }
 }
