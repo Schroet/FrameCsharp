@@ -24,7 +24,6 @@ namespace SharpFrame.Pages
             driver.FindElement(findBtn).SendKeys(Keys.Enter);
             ClearFld(searchFld);
             WriteText(searchFld, "Text from the base class");
-
         }
 
         public void OpenPage()

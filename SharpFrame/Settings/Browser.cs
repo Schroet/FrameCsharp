@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SharpFrame.Pages;
+using SharpFrame.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 namespace SharpFrame.Settings
 {
     public class Browser
-    {
+    { 
         public IWebDriver driver;
         public Home home;
 
@@ -24,6 +25,7 @@ namespace SharpFrame.Settings
 
         public static void Main()
         {
+           
         }
 
         [TearDown]
