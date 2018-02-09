@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace SharpFrame.Pages
 {
-    public class Home
+    public class Home : Base
     {
-        IWebDriver driver;
 
-        public Home(IWebDriver driver)
+        public Home(IWebDriver driver) : base(driver)
         {
-            this.driver = driver;
         }
 
         By searchFld = By.CssSelector("#lst-ib");
@@ -22,9 +20,10 @@ namespace SharpFrame.Pages
 
         public void TestRequest()
         {
-
             driver.FindElement(searchFld).SendKeys("new test request");
             driver.FindElement(findBtn).SendKeys(Keys.Enter);
+            ClearFld(searchFld);
+            WriteText(searchFld, "Text from the base class");
 
         }
 
