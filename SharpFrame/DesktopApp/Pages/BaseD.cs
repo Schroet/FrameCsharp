@@ -1,33 +1,28 @@
-﻿using OpenQA.Selenium;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 
-namespace SharpFrame.Pages
+namespace SharpFrame.DesktopApp.Pages
 {
-    public class Base
+   public class BaseD
     {
-        protected IWebDriver driver;
+        protected RemoteWebDriver driver;
 
-        public Base(IWebDriver driver)
+        public BaseD(RemoteWebDriver driver)
         {
             this.driver = driver;
         }
-
 
         public void WriteText(By element, string text)
         {
             driver.FindElement(element).SendKeys(text);
         }
 
-        public void ClearFld(By element)
-        {
-            driver.FindElement(element).Clear();
-        }
-
-        public void Click(By element)
+        public void ClickBtn(By element)
         {
             driver.FindElement(element).Click();
         }

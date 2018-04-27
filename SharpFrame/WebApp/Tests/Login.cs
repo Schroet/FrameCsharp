@@ -11,12 +11,11 @@ namespace SharpFrame.Tests
     public class LoginTests : Browser
     {
         [Test]
-        public void Test1()
+        public void LoginTC()
         {
-
-            home.OpenPage();
-            home.TestRequest();
-
+            login.OpenLoginPage();
+            login.SignIn();
+            home.CheckIcon();
         }
     }
 }

@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="SharpFrame.Tests.GetWhitelisted.GetWhitelistedFill" /><Add Test="SharpFrame.Tests.LoginTests.LoginTC" /><Add Test="SharpFrame.Tests.Navigation.CheckNavigation" /><Add Test="SharpFrame.Tests.ChangeLanguage.ChangeLanguages" /><Add Test="SharpFrame.Tests.Registration.RegistrationTc1" /></Playlist>
